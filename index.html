@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hush Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== Preloader ========== -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-text">HUSH</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Custom Cursor ========== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ========== Navigation ========== -->
+    <header id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">H.</a>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link" data-text="项目">项目</a>
+                <a href="#tools" class="nav-link" data-text="工具">工具</a>
+                <a href="#about" class="nav-link" data-text="关于">关于</a>
+                <a href="#contact" class="nav-link" data-text="联系">联系</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== Hero Section - Scroll Engraving Animation ========== -->
+    <section id="hero">
+        <canvas id="engraving-canvas"></canvas>
+        <div class="hero-scroll-hint">
+            <span>向下滚动探索</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Title Section ========== -->
+    <section id="title-section">
+        <div class="title-container">
+            <div class="title-eyebrow">Creative Developer & Designer</div>
+            <h1 class="main-title">
+                <span class="title-word" data-delay="0">Hush</span>
+                <span class="title-word" data-delay="0.15">Portfolio</span>
+            </h1>
+            <div class="title-line"></div>
+            <p class="title-tagline">游戏 · 动画 · 工具</p>
+        </div>
+        <!-- Parallax decorative elements -->
+        <div class="deco deco-circle" data-speed="0.3"></div>
+        <div class="deco deco-line-h" data-speed="-0.2"></div>
+        <div class="deco deco-dot" data-speed="0.5"></div>
+        <div class="deco deco-cross" data-speed="-0.4"></div>
+    </section>
+
+    <!-- ========== Projects Section ========== -->
+    <section id="projects">
+        <!-- Dynamic background layers -->
+        <div class="projects-bg">
+            <div class="projects-bg__layer" data-bg-for="0" style="background-image: url('pic/Infinify Nikki/Infinify Nikki.jpg')"></div>
+            <div class="projects-bg__layer" data-bg-for="1" style="background-image: url('pic/TCG/Chaos.png')"></div>
+            <div class="projects-bg__overlay"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header" data-animate>
+                <div class="section-label">
+                    <span class="section-number">01</span>
+                    <span class="section-line-h"></span>
+                </div>
+                <h2 class="section-title">项目经历</h2>
+                <p class="section-subtitle">SELECTED PROJECTS</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 01 - Infinity Nikki -->
+                <article class="project-card project-card--expandable" data-animate>
+                    <div class="project-card__visual">
+                        <img src="pic/Infinify Nikki/Infinify Nikki.jpg" alt="Infinity Nikki" class="project-card__img">
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__num-badge">01</div>
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__title">
+                            Infinify Nikki
+                            <span class="project-card__title-cn">无限暖暖</span>
+                        </h3>
+                        <p class="project-card__period">2025/1/06 — 至今</p>
+                        <p class="project-card__desc">参与版本 1.2 花焰季 — 2.2 九色万相生</p>
+                        <div class="project-card__tags">
+                            <span class="tag">技术动画</span>
+                            <span class="tag">过场组</span>
+                        </div>
+                    </div>
+                    <div class="project-card__expand">
+                        <div class="project-card__expand-inner">
+                            <p class="project-card__detail">
+                                在无限暖暖过场组中担任<strong>技术动画师</strong>岗位，接触的技术方向有：
+                            </p>
+                            <ul class="project-card__list">
+                                <li>动捕工具链开发</li>
+                                <li>动画工具链开发</li>
+                                <li>DCC 物理解算研究</li>
+                                <li>面捕工作流的开发和生产</li>
+                                <li>重定向工具的研究与问题解决</li>
+                            </ul>
+                            <div class="project-card__gallery">
+                                <img src="pic/Infinify Nikki/emoji_test.jpg" alt="Emoji Test" class="project-card__gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 02 - TCG Chaos -->
+                <article class="project-card project-card--expandable" data-animate>
+                    <div class="project-card__visual">
+                        <img src="pic/TCG/Chaos.png" alt="TCG Chaos" class="project-card__img">
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__num-badge">02</div>
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__title">
+                            Tcg Chaos
+                            <span class="project-card__title-cn">潮起之约</span>
+                        </h3>
+                        <p class="project-card__period">2023/06/19 — 2024/10/24</p>
+                        <p class="project-card__desc">在听潮阁演出组中担任技术动画师岗位</p>
+                        <div class="project-card__tags">
+                            <span class="tag">技术动画</span>
+                            <span class="tag">演出组</span>
+                        </div>
+                    </div>
+                    <div class="project-card__expand">
+                        <div class="project-card__expand-inner">
+                            <p class="project-card__detail">
+                                在听潮阁演出组中担任<strong>技术动画师</strong>岗位，接触的技术方向有：
+                            </p>
+                            <ul class="project-card__list">
+                                <li>面捕工作流的开发</li>
+                                <li>面捕硬件研究</li>
+                                <li>MetaHuman 的标准制定与应用</li>
+                            </ul>
+                            <div class="project-card__gallery">
+                                <img src="pic/TCG/Chaos_qy.png" alt="潮起" class="project-card__gallery-img">
+                                <img src="pic/TCG/Chaos_c18.png" alt="C18" class="project-card__gallery-img">
+                                <img src="pic/TCG/Chaos_ym.png" alt="演幕" class="project-card__gallery-img">
+                                <img src="pic/TCG/Chaos_yx.png" alt="演秀" class="project-card__gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Tools Section ========== -->
+    <section id="tools">
+        <div class="section-container">
+            <div class="section-header" data-animate>
+                <div class="section-label">
+                    <span class="section-number">02</span>
+                    <span class="section-line-h"></span>
+                </div>
+                <h2 class="section-title">工具技能</h2>
+                <p class="section-subtitle">TOOLS & SKILLS</p>
+            </div>
+
+            <div class="tools-marquee" data-animate>
+                <div class="tools-track">
+                    <div class="tool-item"><span class="tool-name">Unreal Engine</span><span class="tool-dot"></span></div>
+                    <div class="tool-item"><span class="tool-name">Maya</span><span class="tool-dot"></span></div>
+                    <div class="tool-item"><span class="tool-name">MotionBuilder</span><span class="tool-dot"></span></div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="tool-item"><span class="tool-name">Unreal Engine</span><span class="tool-dot"></span></div>
+                    <div class="tool-item"><span class="tool-name">Maya</span><span class="tool-dot"></span></div>
+                    <div class="tool-item"><span class="tool-name">MotionBuilder</span><span class="tool-dot"></span></div>
+                </div>
+            </div>
+
+            <div class="tools-grid">
+                <div class="tool-card" data-animate data-tool="ue">
+                    <div class="tool-card__icon">UE</div>
+                    <h3 class="tool-card__name">Unreal Engine</h3>
+                    <p class="tool-card__desc">虚幻引擎开发</p>
+                    <div class="tool-card__line"></div>
+                </div>
+                <div class="tool-card" data-animate data-tool="maya">
+                    <div class="tool-card__icon">Maya</div>
+                    <h3 class="tool-card__name">Maya</h3>
+                    <p class="tool-card__desc">DCC工具开发</p>
+                    <div class="tool-card__line"></div>
+                </div>
+                <div class="tool-card" data-animate data-tool="mb">
+                    <div class="tool-card__icon">MB</div>
+                    <h3 class="tool-card__name">MotionBuilder</h3>
+                    <p class="tool-card__desc">MB工具开发</p>
+                    <div class="tool-card__line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== About Section ========== -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header" data-animate>
+                <div class="section-label">
+                    <span class="section-number">03</span>
+                    <span class="section-line-h"></span>
+                </div>
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">ABOUT ME</p>
+            </div>
+
+            <!-- 上方：照片 + 基本信息 + 数据 -->
+            <div class="about-top" data-animate>
+                <div class="about-top__photo">
+                    <div class="about-image-wrapper" data-speed="0.15">
+                        <img src="pic/person/person.jpg" alt="Hush" class="about-image-photo">
+                    </div>
+                </div>
+                <div class="about-top__info">
+                    <p class="about-greeting">你好，我是</p>
+                    <h3 class="about-name">Hush</h3>
+                    <div class="about-divider"></div>
+                    <p class="about-bio">
+                        技术动画师，专注于游戏与动画领域的工具链开发和技术落地。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">年经验</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">个项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">项技能</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下方：职业履历 -->
+            <div class="about-timeline" data-animate>
+                <h3 class="about-timeline__title">职业履历</h3>
+                <div class="about-timeline__list">
+                    <div class="about-timeline__item">
+                        <div class="about-timeline__dot"></div>
+                        <div class="about-timeline__date">2025.01 — 至今</div>
+                        <div class="about-timeline__body">
+                            <h4>无限暖暖 · 过场组</h4>
+                            <p>技术动画师</p>
+                            <span class="about-timeline__desc">动捕工具链开发、动画工具链开发、DCC 物理解算研究、面捕工作流开发与生产、重定向工具研究</span>
+                        </div>
+                    </div>
+                    <div class="about-timeline__item">
+                        <div class="about-timeline__dot"></div>
+                        <div class="about-timeline__date">2023.06 — 2024.10</div>
+                        <div class="about-timeline__body">
+                            <h4>潮起之约 · 听潮阁演出组</h4>
+                            <p>技术动画师</p>
+                            <span class="about-timeline__desc">面捕工作流开发、面捕硬件研究、MetaHuman 标准制定与应用</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Contact Section ========== -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header" data-animate>
+                <div class="section-label">
+                    <span class="section-number">04</span>
+                    <span class="section-line-h"></span>
+                </div>
+                <h2 class="section-title">联系方式</h2>
+                <p class="section-subtitle">GET IN TOUCH</p>
+            </div>
+
+            <div class="contact-content" data-animate>
+                <p class="contact-intro">有合作意向或者想交流？<br>欢迎通过以下方式联系我</p>
+
+                <div class="contact-links">
+                    <!-- Bilibili -->
+                    <a href="#" class="contact-link" target="_blank" rel="noopener">
+                        <div class="contact-link__icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906L17.813 4.653zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773H5.333zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-link__body">
+                            <span class="contact-link__name">Bilibili</span>
+                            <span class="contact-link__handle">@待补充</span>
+                        </div>
+                        <span class="contact-link__arrow">&rarr;</span>
+                    </a>
+
+                    <!-- QQ -->
+                    <a href="#" class="contact-link">
+                        <div class="contact-link__icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                                <path d="M12.003 2c-2.265 0-6.29 1.364-6.29 7.325v1.195S3.55 14.96 3.55 17.474c0 .665.17 1.025.281 1.025.114 0 .902-.484 1.748-2.072 0 0-.18 2.197 1.904 3.967 0 0-1.77.495-1.77 1.182 0 .686 4.078.43 6.29.43 2.239 0 6.29.256 6.29-.43 0-.687-1.77-1.182-1.77-1.182 2.085-1.77 1.905-3.967 1.905-3.967.845 1.588 1.634 2.072 1.746 2.072.113 0 .283-.36.283-1.025 0-2.514-2.166-6.954-2.166-6.954V9.325C18.29 3.364 14.268 2 12.003 2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-link__body">
+                            <span class="contact-link__name">QQ</span>
+                            <span class="contact-link__handle">待补充</span>
+                        </div>
+                        <span class="contact-link__arrow">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">H.</span>
+            <span class="footer-copy">&copy; 2026 Hush Portfolio</span>
+            <a href="#hero" class="footer-back-top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19V5M5 12l7-7 7 7"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ========== Image Lightbox ========== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" aria-label="关闭"></button>
+        <img class="lightbox__img" id="lightbox-img" src="" alt="Preview">
+    </div>
+
+    <!-- ========== Tool Detail Page (Full-Screen Document) ========== -->
+    <div class="tool-page" id="tool-page">
+        <button class="tool-page__close" aria-label="关闭">
+            <span></span><span></span>
+        </button>
+        <div class="tool-page__scroll">
+            <!-- Hero header -->
+            <div class="tool-page__hero">
+                <div class="tool-page__hero-inner">
+                    <div class="tool-page__icon" id="page-icon"></div>
+                    <h1 class="tool-page__title" id="page-title"></h1>
+                    <p class="tool-page__subtitle" id="page-subtitle"></p>
+                </div>
+            </div>
+            <!-- Document body — sections injected by JS -->
+            <div class="tool-page__content" id="page-content"></div>
+        </div>
+    </div>
+
+    <!-- ========== Noise Texture Overlay ========== -->
+    <div class="noise-overlay"></div>
+
+    <!-- ========== Scripts ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+    <script src="js/main.js?v=5"></script>
+</body>
+</html>
