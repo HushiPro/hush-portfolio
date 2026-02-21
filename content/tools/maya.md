@@ -4,7 +4,7 @@ title: Maya
 subtitle: DCC工具开发
 ---
 
-![Maya批量处理工具集](pic/Tool/MaBatchTool.PNG)
+![Maya批量处理工具集](pic/Tool/MaBatchTool.webp)
 
 ## 批量处理工具
 
@@ -15,7 +15,7 @@ subtitle: DCC工具开发
 
 ---
 
-![批量处理工具界面](pic/Tool/MaBatchTool1.PNG)
+![批量处理工具界面](pic/Tool/MaBatchTool1.webp)
 
 ## Rigging 与动画工作流
 
@@ -25,7 +25,7 @@ subtitle: DCC工具开发
 
 ---
 
-![OverRig汉化和工作流](pic/Tool/overrig汉化和工作流.png)
+![OverRig汉化和工作流](pic/Tool/overrig汉化和工作流.webp)
 
 ## OverRig 汉化和工作流
 
@@ -33,7 +33,7 @@ subtitle: DCC工具开发
 
 ---
 
-![tCD Library](pic/Tool/tCDLibrary.png)
+![tCD Library](pic/Tool/tCDLibrary.webp)
 
 ## tCD Library
 

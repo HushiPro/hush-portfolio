@@ -11,7 +11,7 @@
         goldRGB: { r: 201, g: 169, b: 110 },
         bgColor: '#0A0A0A',
         lineSpacing: 3,
-        logoSrc: 'assets/logo.png',
+        logoSrc: 'assets/logo.webp',
         scrollAnimationLength: 3, // multiplier of viewport height
     };
 
