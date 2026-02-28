@@ -1326,13 +1326,13 @@ body.cursor-hover .cursor-ring {
     margin-top: 16px;
     font-size: 12px;
     color: var(--gold);
-    opacity: 0;
+    opacity: 0.4;
     letter-spacing: 0.06em;
     transition: opacity 0.4s;
 }
 
 .tool-card:hover .tool-card__hint {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .tool-card__line {
