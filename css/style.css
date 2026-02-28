@@ -693,6 +693,21 @@ body.cursor-hover .cursor-ring {
     text-transform: uppercase;
 }
 
+/* --- Card Hint --- */
+.project-card__hint {
+    padding: 0 28px 16px;
+    font-size: 12px;
+    color: var(--gold);
+    opacity: 0.5;
+    letter-spacing: 0.06em;
+    transition: opacity 0.4s;
+}
+
+.project-card--expandable:hover .project-card__hint {
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* --- Expandable Card --- */
 .project-card__expand {
     max-height: 0;
@@ -1305,6 +1320,19 @@ body.cursor-hover .cursor-ring {
     font-size: 14px;
     color: var(--gray-400);
     line-height: 1.6;
+}
+
+.tool-card__hint {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--gold);
+    opacity: 0;
+    letter-spacing: 0.06em;
+    transition: opacity 0.4s;
+}
+
+.tool-card:hover .tool-card__hint {
+    opacity: 0.6;
 }
 
 .tool-card__line {
